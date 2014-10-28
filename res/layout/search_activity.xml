@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/search_descrip"
+		android:paddingLeft="10dp"
+        />
+<TableLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+   <TableRow >
+     <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/current_ip"
+		android:paddingLeft="10dp"
+        />
+    <TextView 
+         android:id="@+id/current_ip"
+         android:paddingLeft="10dp"
+         android:layout_width="100dp"
+	     android:layout_height="wrap_content"
+        />
+       
+   </TableRow>
+   
+   <TableRow >
+       <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/ip_address_from"
+		 android:paddingLeft="10dp"
+        />
+        <EditText 
+          android:id="@+id/ip_address_from"
+          android:paddingLeft="10dp"
+          android:inputType="text"
+          android:layout_width="100dp"
+	      android:layout_height="wrap_content"
+        />
+   </TableRow>
+   <TableRow >
+       <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/ip_address_to"
+		 android:paddingLeft="10dp"
+        />
+        <EditText 
+          android:id="@+id/ip_address_to"
+          android:paddingLeft="10dp"
+          android:inputType="text"
+          android:layout_width="100dp"
+	      android:layout_height="wrap_content"
+        />
+   </TableRow>
+   <TableRow >
+       <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/filename_key"
+		 android:paddingLeft="10dp"
+        />
+        <EditText 
+          android:id="@+id/filename_key"
+          android:paddingLeft="10dp"
+          android:inputType="text"
+          android:layout_width="100dp"
+	      android:layout_height="wrap_content"
+        />
+   </TableRow>
+    <TableRow >
+       <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/file_extensions"
+		 android:paddingLeft="10dp"
+        />
+        <EditText 
+          android:id="@+id/file_extensions"
+          android:paddingLeft="10dp"
+          android:inputType="text"
+          android:layout_width="100dp"
+	      android:layout_height="wrap_content"
+        />
+   </TableRow>
+   <TableRow>
+       <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/file_size_less"
+		 android:paddingLeft="10dp"
+        />
+        <EditText 
+          android:id="@+id/file_size_less"
+          android:paddingLeft="10dp"
+          android:inputType="number"
+          android:layout_width="100dp"
+	      android:layout_height="wrap_content"
+        />
+        <Spinner 
+          android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"  
+            />
+   </TableRow>
+   <TableRow >
+      <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/save_on_find"
+		 android:paddingLeft="10dp"
+        />
+      <CheckBox 
+           android:layout_width="wrap_content"
+		   android:layout_height="wrap_content"
+		   android:checked="false"
+          />
+   </TableRow>
+   <TableRow >
+       <TextView 
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:text="@string/save_location"
+		 android:paddingLeft="10dp"
+        /> 
+       <EditText 
+          android:id="@+id/file_path"
+          android:paddingLeft="10dp"
+          android:inputType="text"
+          android:layout_width="100dp"
+	      android:layout_height="wrap_content"
+        />
+       <Button 
+            android:text="@string/file_browse"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+           />
+        
+   </TableRow>
+   <TableRow>
+      <Button 
+            android:text="@string/start_search"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+           /> 
+   </TableRow>
+   
+   
+   
+
+</TableLayout>
+</FrameLayout>

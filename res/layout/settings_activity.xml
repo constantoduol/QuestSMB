@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TableRow>
+    <TextView 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/user_name"
+		android:paddingLeft="10dp"
+        />
+    <EditText 
+         android:id="@+id/username"
+         android:paddingLeft="10dp"
+         android:inputType="text"
+         android:layout_width="200dp"
+	     android:layout_height="wrap_content"
+        />
+    
+	</TableRow>
+	
+      <TableRow>
+    	<TextView 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/pass_word"
+		android:paddingLeft="10dp"
+        />
+    <EditText 
+         android:id="@+id/password"
+         android:paddingLeft="10dp"
+         android:inputType="textPassword"
+         android:layout_width="200dp"
+	     android:layout_height="wrap_content"
+        />
+	</TableRow>
+	
+     <TableRow>
+   	   <TextView 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/domain"
+		android:paddingLeft="10dp"
+        />
+      <EditText 
+         android:id="@+id/domain"
+         android:paddingLeft="10dp"
+         android:layout_width="200dp"
+	     android:layout_height="wrap_content"
+         android:inputType="text"
+        />
+	</TableRow>
+	  <View android:layout_width="fill_parent"
+     		android:layout_height="1dp"
+     		android:paddingTop="10dp"
+     		android:background="@color/layout_separator_color"
+       />
+</TableLayout>
